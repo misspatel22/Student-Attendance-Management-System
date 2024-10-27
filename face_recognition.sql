@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 01, 2024 at 06:00 PM
+-- Generation Time: Oct 27, 2024 at 12:18 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -38,13 +38,6 @@ CREATE TABLE `register` (
   `password` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `register`
---
-
-INSERT INTO `register` (`id`, `fname`, `lname`, `contact`, `email`, `securityQ`, `securityA`, `password`) VALUES
-(1, 'vidhi', 'patel', '9876543219', 'patel@gmail.com', 'Your Birth Place', 'kahoda', '1234567');
-
 -- --------------------------------------------------------
 
 --
@@ -68,13 +61,6 @@ CREATE TABLE `student` (
   `Teacher` varchar(45) NOT NULL,
   `Photo` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `student`
---
-
-INSERT INTO `student` (`Department`, `Course`, `Year`, `Semester`, `Id`, `Name`, `Division`, `RollNo`, `Gender`, `Dob`, `Email`, `Phone`, `Address`, `Teacher`, `Photo`) VALUES
-('IT', 'Engineering', '2020-2024', 'Semester-8', '1', 'Vidhi Patel', 'A', '6058', 'Female', '07/04/2003', 'vp@gmail.com', '9876543210', 'Ahmedabad', 'Rahul Sir', 'Yes');
 
 --
 -- Indexes for dumped tables
